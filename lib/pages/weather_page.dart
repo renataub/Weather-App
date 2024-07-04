@@ -121,7 +121,7 @@ class _WeatherPageStates extends State<WeatherPage> {
               SizedBox(height: 20),
               Text(_weather?.cityName ?? "Loading...", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: widget.isDarkMode ? Colors.white : Colors.black),),
               Lottie.asset(getWeatherAnimation(_weather?.mainCondition)),
-              Text('${_weather?.temperature?.round() ?? ''}C',
+              Text('${_weather?.temperature.round() ?? ''}C',
                 style: TextStyle(fontSize: 32, color: widget.isDarkMode? Colors.white : Colors.black),
               ),
               Text(_weather?.mainCondition ?? '',
