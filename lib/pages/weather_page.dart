@@ -64,7 +64,7 @@ class _WeatherPageStates extends State<WeatherPage> {
         title: Text('Weather App'),
         actions: [
           IconButton(
-            icon: Icon(widget.isDarkMode ? Icons.dark_mode : Icons.light_mode),
+            icon: Icon(widget.isDarkMode ? Icons.light_mode : Icons.dark_mode),
             onPressed: widget.toggleDarkMode as void Function(), 
           ),
         ],
